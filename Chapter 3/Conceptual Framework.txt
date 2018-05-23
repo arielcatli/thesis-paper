@@ -1,0 +1,35 @@
+INPUT
+Image of Non-overlapping Rice Grains
+
+PROCESS
+Connected-component labelling and Counting
+Extraction of Sub-images
+Grain Validation (foreign material or a grain?)-SVM with HOG features
+Grain Size Classification (Broken or Unbroken)-SVM with HOG features
+	Average size of unbroken
+	For broken, brewer
+Grain Type Classification - SVM with AdaBoost
+	For Red, Green, Yellow, paddy, degree of milling, damaged:
+	standard deviation R
+	skew R
+	mean R
+	dominant R
+	standard deviation G
+	skew G
+	mean G
+	dominant G
+	standard deviation B
+	skew B
+	mean B
+	dominant B
+	mean greyscale
+
+	THRESHOLDING:
+	Chalky Kernel
+Averaging
+Grade Classification
+
+OUTPUT:
+Grade
+Summary of Characteristics
+	
